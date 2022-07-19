@@ -1,0 +1,569 @@
+/*=========================================
+============== common css ==============*/
+body {
+  color: #cccccc;
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 96%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.aligenleft {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.aligenright {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.aligencenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+/*=========================================
+============== Top header css ==============*/
+#header_area {
+  width: 100%;
+  clear: both;
+}
+#top_header_area {
+  width: 100%;
+  background-color: #ba2e1f;
+  padding: 15px 0;
+}
+.inner_top_header {
+  overflow: hidden;
+}
+.mini_menu {
+  width: 70%;
+  float: left;
+  padding-top: 4px;
+}
+.mini_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.mini_menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.mini_menu ul li::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 1px;
+  height: 12px;
+  top: 5px;
+  left: -10px;
+}
+.mini_menu ul li:first-child::after {
+  display: none;
+}
+.mini_menu ul li a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.mini_menu ul li a:hover {
+  color: #dddddd;
+}
+.search_area {
+  width: 30%;
+  float: right;
+}
+.search_area form {
+  background: #ffffff;
+  border-radius: 25px;
+  max-width: 210px;
+  width: 96%;
+  float: right;
+  padding: 2%;
+}
+.search_area input {
+  width: 75%;
+  border: 0px solid;
+  padding: 1%;
+  float: left;
+  color: #000000;
+  outline: none;
+}
+.search_area input[type="submit"] {
+  background: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 23%;
+  cursor: pointer;
+}
+
+/*========================================
+============= Main header css ===========*/
+
+#main_header_area {
+  width: 100%;
+  clear: both;
+}
+.inner_main_header_area {
+  overflow: hidden;
+  padding: 40px 0;
+}
+.logo_area {
+  width: 100%;
+  max-width: 240px;
+  float: left;
+}
+.social_area {
+  width: 100%;
+  max-width: 600px;
+  float: right;
+  padding-top: 20px;
+}
+.social_area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.social_area ul li {
+  display: inline-block;
+  margin-left: 14px;
+}
+.social_area ul li a {
+  display: block;
+  text-decoration: none;
+}
+.social_area ul li a i {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 34px;
+  height: 25px;
+  text-align: center;
+  padding-top: 9px;
+  transition: 0.5s;
+}
+.social_area ul li a:hover i.fa-linkedin-in {
+  background-color: #546de5;
+}
+.social_area ul li a:hover i.fa-twitter {
+  background-color: #4cd137;
+}
+.social_area ul li a:hover i.fa-pinterest {
+  background-color: #e15f41;
+}
+.social_area ul li a:hover i.fa-google-plus-g {
+  background-color: #eb6243;
+}
+.social_area ul li a:hover i.fa-rss {
+  background-color: #ee802f;
+}
+
+/*=========================================
+========== Navigation area css =========*/
+
+#main_menu {
+  width: 100%;
+  clear: both;
+}
+.inner_menu {
+  background: #333333;
+  position: relative;
+  min-height: 30px;
+  padding: 15px 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+.inner_menu::after {
+  background-color: #2b2b2b;
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  border-radius: 0 0 6px 6px;
+  z-index: -1;
+}
+.inner_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.inner_menu ul li {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+.inner_menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+.inner_menu ul li a:hover {
+  color: #cc3f2f;
+}
+.inner_menu ul li:hover a {
+  color: #cc3f2f;
+}
+.inner_menu ul li:hover ul li a {
+  color: #fff;
+}
+
+/* dropdown style */
+
+.inner_menu ul ul {
+  position: absolute;
+  background-color: #c92f1e;
+  width: 180px;
+  left: -999999px;
+  top: 24px;
+}
+.inner_menu ul li:hover ul {
+  left: 0;
+}
+.inner_menu ul li:hover ul ul {
+  left: -999999px;
+}
+.inner_menu ul li:hover ul li:hover ul {
+  left: 180px;
+}
+.inner_menu ul ul li {
+  margin: 0;
+  display: block;
+}
+.inner_menu ul ul li a {
+  display: block;
+  padding: 2px 0;
+}
+.inner_menu ul ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.inner_menu ul ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.inner_menu ul ul li:hover a {
+  background-color: #333;
+  color: #fff;
+}
+.inner_menu ul ul li:hover ul li a {
+  background-color: #c92f1e;
+  color: #fff;
+}
+.inner_menu ul ul li ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.inner_menu ul ul ul {
+  left: 180px;
+  top: 0;
+}
+
+/*=========================================
+========== Navigation area css =========*/
+
+#slider_area {
+  margin-top: 15px;
+}
+
+/*========================================
+========== Hero area css ==============*/
+
+#hero_area {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+.inner_hero_area {
+  overflow: hidden;
+}
+.inner_hero_area img {
+  border-radius: 6px;
+}
+.inner_hero_area h2 {
+  color: #000000;
+  font-size: 86px;
+  line-height: 1em;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.inner_hero_area p {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: normal;
+}
+.inner_hero_area a {
+  float: right;
+  color: #ba2e1f;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  transition: 0.5s;
+}
+.inner_hero_area a:hover {
+  color: #0f0d0d;
+  text-decoration: underline;
+}
+
+/*========================================
+========== Work area css ==============*/
+
+#work_area {
+  background-color: #f2f2f2;
+  padding: 45px 0;
+}
+.inner_work_area {
+  overflow: hidden;
+}
+.child_work {
+  width: 32%;
+  float: left;
+  margin: 0 1% 10px;
+}
+.child_work h1 {
+  color: #333333;
+  font-size: 26px;
+  font-weight: normal;
+}
+.child_work p {
+  color: #cecece;
+  font-size: 14px;
+  font-weight: normal;
+}
+.child_work a {
+  color: #b92d1f;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  clear: both;
+  display: inline-block;
+  float: right;
+  transition: 0.5s;
+}
+.child_work a:hover {
+  color: #0f0d0d;
+  text-decoration: underline;
+}
+.about_area {
+  margin-left: 0;
+}
+.about_area img {
+  border: 1px solid #dfdfdf;
+  padding: 5px;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+.child_service {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.child_service img {
+  margin-top: 8px;
+}
+.child_service .survice_image {
+  width: 25%;
+  float: left;
+}
+.child_service .survice_text {
+  width: 75%;
+  float: right;
+}
+.child_service .survice_text h3 {
+  color: #878787;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.child_service .survice_text p {
+  margin-top: 0;
+  line-height: 1.4em;
+}
+.testimonial_area {
+  margin-right: 0;
+}
+.child_testimonial {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.child_testimonial h3 {
+  background-image: url(../img/comment.png);
+  background-repeat: no-repeat;
+  color: #989898;
+  font-style: 16px;
+  font-weight: bold;
+  padding: 15px 0px 15px 65px;
+}
+.child_testimonial h3 span {
+  font-weight: normal;
+}
+
+/*=========================================
+========== Footer area css =============*/
+#footer_area {
+  background-color: #fff;
+  padding: 45px 0;
+}
+.inner_footer_area {
+  overflow: hidden;
+}
+.child_footer {
+  width: 21%;
+  padding: 1%;
+  margin: 0 1% 10px;
+  float: left;
+}
+.child_footer h3 {
+  border-top: 1px solid #666;
+  color: #666666;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 5px;
+}
+.child_footer h4 {
+  color: #666;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.child_footer h4 a {
+  color: #666666;
+  text-decoration: none;
+  float: none;
+}
+.child_footer h4 a:hover {
+  color: #b92d1f;
+}
+.child_footer h6 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+.child_footer p {
+  color: #666;
+  margin-top: 0;
+  font-size: 14px;
+}
+.child_footer p a {
+  color: #b92d1f;
+  text-decoration: none;
+}
+.child_footer p a:hover {
+  color: #cf8080;
+  text-decoration: underline;
+}
+.child_blog {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.child_blog a {
+  color: #b92d1f;
+  float: right;
+}
+.child_blog a:hover {
+  color: #1a1515;
+}
+.child_footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.child_footer ul ul {
+  display: none;
+}
+.child_footer ul li {
+  background: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  display: block;
+  border-bottom: 1px solid #666666;
+  padding-left: 15px;
+}
+.child_footer ul li:last-child {
+  border-bottom: 0px solid;
+}
+.child_footer ul li a {
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.child_footer ul li a:hover {
+  color: #b92d1f;
+}
+.child_footer input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 10px;
+  outline: none;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.child_footer textarea {
+  width: 100%;
+  height: 105px;
+  margin: 5px 0;
+  padding: 12px 10px;
+  outline: none;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.child_footer input[type="submit"] {
+  width: 88px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b82c1f;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.child_footer input[type="submit"]:hover {
+  background-color: #e74b3d;
+  color: #fff;
+}
+
+/*=========================================
+========== Copyright area css =============*/
+
+#copyright_area {
+  width: 100%;
+  background: #f2f2f2;
+}
+.inner_copyright {
+  overflow: hidden;
+}
+.inner_copyright p {
+  color: #919191;
+  font-size: 14px;
+}
+.left_copyright {
+  float: left;
+}
+.left_copyright {
+  float: right;
+}
